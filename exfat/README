@@ -8,3 +8,9 @@
    ## copy files into rpmbuild SOURCES dir
 3. rpmbuild
    [ignored]
+4. install using rpm
+5. configure system
+   # ln -s /usr/sbin/mount.exfat /sbin/
+   ## edit /etc/fstab, add corresponding config, example:
+   ## /dev/sdb1               /mnt/c                  exfat defaults 0 0
+   ## NOTE: don't refer to /etc/mtab, there are slight differences
