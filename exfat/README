@@ -1,0 +1,10 @@
+1. git clone exfat from github
+   # git clone https://github.com/svn2github/exfat.git
+2. choose the version and package files
+   ## here I choose v1.1.1 as example
+   # cd tags/v1.1.1
+   # tar czf exfat-utils-1.1.1.tar.gz ChangeLog  COPYING  dump  fsck  label  libexfat  mkfs  SConstruct
+   # tar czf fuse-exfat-1.1.1.tar.gz ChangeLog  config.log  COPYING  debugfiles.list  debuglinks.list  debugsources.list  fuse  libexfat  SConstruct
+   ## copy files into rpmbuild SOURCES dir
+3. rpmbuild
+   [ignored]
